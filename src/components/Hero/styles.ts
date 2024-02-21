@@ -9,14 +9,15 @@ export const Form = styled.form`
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 
-  ::before {
+  &::before {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: ${({ theme }) => theme.corSecundaria};
+    background-color: ${({ theme }) => theme.corPrincipal};
     content: "";
     opacity: 0.7;
   }

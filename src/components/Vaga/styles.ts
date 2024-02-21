@@ -19,18 +19,18 @@ export const ListaLI = styled.li`
     color: ${({ theme }) => theme.corSecundaria};
   }
 
-  hover a {
+  :hover a {
     border-color: ${({ theme }) => theme.corPrincipal};
     background-color: ${({ theme }) => theme.corSecundaria};
     color: ${({ theme }) => theme.corPrincipal};
   }
 `;
 
-export const Titulo = styled(Texto)<PropsTitulo>`
-  font-weight: ${(props) => (props.fontWeight ? props.fontWeight : "normal")};
-  margin-bottom: ${(props) =>
-    props.marginBottom ? props.marginBottom + "px" : "0px"};
+export const Titulo = styled.h3`
+  margin-bottom: 16px;
+  font-weight: bold;
 `;
+
 export const Link = styled.a`
   border-color: ${({ theme }) => theme.corSecundaria};
   background-color: ${({ theme }) => theme.corPrincipal};

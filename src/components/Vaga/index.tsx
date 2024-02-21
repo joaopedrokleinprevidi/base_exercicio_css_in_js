@@ -12,17 +12,15 @@ type Props = {
 
 const Vaga = (props: Props) => (
   <ListaLI>
-    <Titulo fontWeight="bold" marginBottom={16}>
-      {props.titulo}
-    </Titulo>
+    <Titulo>{props.titulo}</Titulo>
     <ul>
-      <ListaLI>Localizacao: {props.localizacao}</ListaLI>
-      <ListaLI>Senioridade: {props.nivel}</ListaLI>
-      <ListaLI>Tipo de contratacao: {props.modalidade}</ListaLI>
-      <ListaLI>
+      <li>Localizacao: {props.localizacao}</li>
+      <li>Senioridade: {props.nivel}</li>
+      <li>Tipo de contratacao: {props.modalidade}</li>
+      <li>
         Salário: {props.salarioMin} - {props.salarioMax}
-      </ListaLI>
-      <ListaLI>Requisitos: {props.requisitos.join(", ")}</ListaLI>
+      </li>
+      <li>Requisitos: {props.requisitos.join(", ")}</li>
     </ul>
     <Link href="#">Ver detalhes e candidatar-se</Link>
   </ListaLI>
